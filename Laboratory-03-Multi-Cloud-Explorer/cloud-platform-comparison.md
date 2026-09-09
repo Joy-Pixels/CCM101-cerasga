@@ -52,9 +52,6 @@ I would choose Google Cloud Platform. The main reason is that AI is everywhere n
 
 <div align="center">
 
-<br>
-<br>
-
 <sub>- CHECKPOINT 5 -</sub>
 
 ## Match the Cloud Services
