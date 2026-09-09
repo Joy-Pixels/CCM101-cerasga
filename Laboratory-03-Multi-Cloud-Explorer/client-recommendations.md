@@ -85,3 +85,33 @@ AWS is well suited for a global e-commerce company because of its large number o
 - **Amazon EC2 with Auto Scaling** – to automatically handle changes in traffic
 - **Amazon CloudFront** – to deliver content quickly to customers worldwide
 - **Amazon RDS** – to manage product and order data reliably
+
+
+
+---
+
+<div align="center">
+
+<sub>- CHECKPOINT 6 -</sub>
+
+## Multi-Cloud Decision Matrix
+
+</div>
+
+<p align="justify">
+This section presents a simple decision matrix that recommends the most suitable cloud platform for different business needs. It summarizes the reasoning behind each recommendation, based on the strengths of AWS, Microsoft Azure, and Google Cloud Platform explored throughout this research.
+</p>
+
+<div align="center">
+
+| Business Requirement | Recommended Platform | Justification |
+|---|---|---|
+| Startup Company | AWS | Offers a free tier and flexible pay-as-you-go pricing, plus the widest range of services to support growth without switching providers later. |
+| Enterprise Organization | AWS | Most mature and widely adopted platform, with the broadest service catalog and largest global infrastructure to support large-scale operations. |
+| Microsoft Environment | Azure | Integrates directly with Windows Server, Active Directory, and Microsoft 365, making it the natural choice for companies already using Microsoft tools. |
+| AI / Machine Learning | GCP | Leading AI/ML tools like Vertex AI and TensorFlow, plus strong high-performance computing support for training and deploying models. |
+| Kubernetes Deployment | GCP | Created and still leads development of Kubernetes, offering the most mature managed Kubernetes service through GKE. |
+| Global Web Application | AWS | Largest number of Regions and Availability Zones worldwide, with proven auto-scaling tools to handle high traffic and stay available globally. |
+
+</div>
+
