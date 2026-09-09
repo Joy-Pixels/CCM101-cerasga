@@ -1,7 +1,5 @@
 <div align="center">
 
-<sub>- CHECKPOINT 7 -</sub>
-
 # Linux Investigation
 
 </div>
@@ -10,7 +8,24 @@
 This section documents the system information gathered from a Linux server running on a KillerCoda Playground, along with an analysis of which AWS, Azure, and GCP services could host this server if it were migrated to the cloud.
 </p>
 
-## System Information
+---
+
+## 🎯 Mission Objectives
+
+<p align="justify">
+At the end of this laboratory activity, you should be able to:
+</p>
+
+- Explore the major public cloud platforms.
+- Identify the core services offered by AWS, Microsoft Azure, and Google Cloud Platform.
+- Compare cloud services across different providers.
+- Analyze business requirements and recommend appropriate cloud solutions.
+- Create professional technical documentation using Markdown.
+- Continue developing a well-organized GitHub Cloud Computing Portfolio.
+
+---
+
+## 🖥️ System Information
 
 ### Operating System
      Linux ubuntu 6.8.0-138-generic #138-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 31 22:41:49 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
@@ -87,14 +102,16 @@ This section documents the system information gathered from a Linux server runni
 | /dev/vda16 | 881M | 117M | 703M | 15% | /boot |
 | /dev/vda15 | 105M | 6.2M | 99M | 6% | /boot/efi |
 
+---
 
-## Commands Used
+## ⌨️ Commands Used
 
 - `uname -a` – displays the operating system, hostname, and kernel version
 - `lscpu` – displays CPU architecture and specifications
 - `free -h` – displays memory usage in human-readable format
 - `df -h` – displays disk space usage in human-readable format
 
+---
 
 **Terminal session showing the Linux Commands Executed using KillerCoda Playground:**
 
@@ -115,7 +132,7 @@ This section documents the system information gathered from a Linux server runni
 
 ---
 
-## Cloud Migration Analysis
+## ☁️ Cloud Migration Analysis
 
 <p align="justify">
 If this Linux server were moved to the cloud, it could be hosted using Amazon EC2 on AWS, Azure Virtual Machines on Azure, or Compute Engine on GCP. All three services let you create virtual machines that match the same operating system, CPU, memory, and disk space as this KillerCoda server, in this case, Ubuntu with 1 vCPU, about 2 GB of RAM, and 19 GB of disk space. You just pick an instance size (or "machine type") that matches or exceeds what this Linux server currently uses, install the same OS, and the app or workload can run the same way, just now in the cloud instead of on a physical or local machine.
