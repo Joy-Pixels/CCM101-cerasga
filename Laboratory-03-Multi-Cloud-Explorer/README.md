@@ -95,11 +95,23 @@ This section documents the system information gathered from a Linux server runni
 - `free -h` – displays memory usage in human-readable format
 - `df -h` – displays disk space usage in human-readable format
 
-**Screenshots:**
 
-`screenshots/killercoda-terminal-1.png`
+**Terminal session showing the Linux Commands Executed using KillerCoda Playground:**
 
-`screenshots/killercoda-terminal-2.png`
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+<img src="https://github.com/Joy-Pixels/CCM101-cerasga/blob/2ce2446c89488766b6737f36967965887cd749ba/Laboratory-03-Multi-Cloud-Explorer/screenshots/checkpoint-7.1.png" width="500"><br>
+</td>
+<td align="center">
+<img src="https://github.com/Joy-Pixels/CCM101-cerasga/blob/2ce2446c89488766b6737f36967965887cd749ba/Laboratory-03-Multi-Cloud-Explorer/screenshots/checkpoint-7.2.png" width="500"><br>
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
