@@ -14,6 +14,8 @@ This document compares the three major cloud platforms, AWS, Microsoft Azure, an
 
 ## Comparison Table
 
+<div align="center">
+
 | Category | AWS | Microsoft Azure | Google Cloud Platform |
 |---|---|---|---|
 | Launch Year | 2006 | 2010 | 2008 |
@@ -23,6 +25,8 @@ This document compares the three major cloud platforms, AWS, Microsoft Azure, an
 | Identity Service | AWS IAM | Microsoft Entra ID (Azure AD) | Google Cloud IAM |
 | Primary Strength | Widest range of services, most mature global infrastructure | Best integration with Microsoft tools; strong hybrid cloud | Leading AI/ML, data analytics, and Kubernetes |
 | Ideal Organizations | Startups to large enterprises needing the broadest service catalog | Organizations already using Windows Server, Microsoft 365, or Active Directory | Companies focused on data analytics, AI, or container-based apps |
+
+</div>
 
 ---
 
@@ -43,3 +47,32 @@ Google Cloud Platform is the strongest in both areas. GCP created Kubernetes and
 **4. Which cloud platform would you personally choose and why?**
 
 I would choose Google Cloud Platform. The main reason is that AI is everywhere now, even e-commerce sites and everyday apps use AI for things like product recommendations, chatbots, and detecting fraud. GCP is strong in AI tools like Vertex AI and TensorFlow, so it feels like the best choice for building apps that use AI. GCP also created Kubernetes, so it's great for running modern apps too. Plus, it runs on the same powerful network as Google Search and YouTube, which already works well for millions of users.
+
+---
+
+<div align="center">
+
+<br>
+<br>
+
+<sub>- CHECKPOINT 5 -</sub>
+
+## Match the Cloud Services
+
+</div>
+
+<p align="justify">
+This section provides a reference table matching equivalent services across AWS, Azure, and GCP. It highlights how each provider offers similar capabilities under different service names, making it easier to translate infrastructure knowledge from one platform to another.
+</p>
+
+<div align="center">
+
+| Service Category | AWS | Azure | GCP |
+|---|---|---|---|
+| Virtual Machine | Amazon EC2 | Azure Virtual Machines | Compute Engine |
+| Object Storage | Amazon S3 | Azure Blob Storage | Cloud Storage |
+| Identity Management | AWS IAM | Microsoft Entra ID | Google Cloud IAM |
+| SQL Database | Amazon RDS | Azure SQL Database | Cloud SQL |
+| Kubernetes | Amazon EKS | Azure Kubernetes Service (AKS) | Google Kubernetes Engine (GKE) |
+
+</div>
