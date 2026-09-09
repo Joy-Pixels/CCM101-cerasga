@@ -1,4 +1,4 @@
-# Checkpoint 3 – Compare the Major Cloud Platforms
+Cloud Platforms Comparison
 
 This document compares the three major cloud platforms, AWS, Microsoft Azure, and Google Cloud Platform, across key categories such as compute, storage, networking, and identity services. It also includes answers to guided questions analyzing each provider's strengths and a personal recommendation based on current industry trends.
 
