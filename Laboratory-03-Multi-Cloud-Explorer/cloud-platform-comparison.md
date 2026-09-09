@@ -1,6 +1,14 @@
-Cloud Platforms Comparison
+<div align="center">
 
+<sub>- CHECKPOINT 3 -</sub>
+
+# Cloud Platforms Comparison
+
+</div>
+
+<p align="justify">
 This document compares the three major cloud platforms, AWS, Microsoft Azure, and Google Cloud Platform, across key categories such as compute, storage, networking, and identity services. It also includes answers to guided questions analyzing each provider's strengths and a personal recommendation based on current industry trends.
+</p>
 
 ---
 
