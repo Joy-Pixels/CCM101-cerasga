@@ -31,6 +31,70 @@
 <br />
 <br />
 
+<p align="center"><strong>-Currently Learning</strong></p>
+<h2 align="center">Expanding Into Cloud Computing</h2>
+
+<br />
+
+<table width="100%">
+  <tr>
+    <td width="100%" valign="middle">
+      <p align="justify">
+        Alongside my UI/UX and web development journey, I'm currently exploring <strong>Cloud Computing</strong> as part of my studies. I'm learning how platforms like AWS, Microsoft Azure, and Google Cloud Platform work, how to compare their services, and how to think through real business scenarios like a Cloud Solutions Consultant would. This is helping me understand not just how to design and build applications, but also how they can be deployed, scaled, and managed in the cloud, giving me a more complete, end-to-end perspective on building digital products.
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" />
+        <img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
+        <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white" />
+        <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br>
+<h3 align="center">Lab Status & Upcoming Activities</h3>
+
+<br />
+
+<table width="100%" cellpadding="8">
+  <tr>
+    <th align="center">Laboratory Activity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th align="center">Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th align="center">Repository&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+  </tr>
+  <tr>
+    <td nowrap>Laboratory 01 – Welcome to the Cloud</td>
+    <td align="center">✅ Completed</td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-01-Welcome-to-the-Cloud">View</a></td>
+  </tr>
+  <tr>
+    <td nowrap>Laboratory 02 – Build the Cloud Infrastructure Blueprint</td>
+    <td align="center">✅ Completed</td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-02-Build-the-Cloud-Infrastructure-Blueprint">View</a></td>
+  </tr>
+  <tr>
+    <td nowrap>Laboratory 03 – Multi-Cloud Explorer</td>
+    <td align="center">✅ Completed</td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-03-Multi-Cloud-Explorer">View</a></td>
+  </tr>
+  <tr>
+    <td nowrap>Laboratory 04 – Upcoming</td>
+    <td align="center">🔜 Not Started</td>
+    <td align="center">—</td>
+  </tr>
+</table>
+
+<br />
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Progress-3%20of%20Many%20Labs%20Completed-blue?style=flat-square" />
+</p>
+
+<br />
+<br />
+<br />
+
 <p align="center"><strong>-My Projects</strong></p>
 <h2 align="center">Featured Works</h2>
 
