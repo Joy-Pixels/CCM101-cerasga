@@ -79,7 +79,12 @@
     <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-03-Multi-Cloud-Explorer">View</a></td>
   </tr>
   <tr>
-    <td nowrap>Laboratory 04 – Upcoming</td>
+    <td nowrap>Laboratory 04 – Cloud Native Engineer</td>
+    <td align="center">✅ Completed</td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-04-Cloud-Native-Engineer">View</a></td>
+  </tr>
+   <tr>
+    <td nowrap>Laboratory 05 – Upcoming</td>
     <td align="center">🔜 Not Started</td>
     <td align="center">—</td>
   </tr>
@@ -88,7 +93,7 @@
 <br />
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Progress-3%20of%20Many%20Labs%20Completed-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Progress-4%20of%20Many%20Labs%20Completed-blue?style=flat-square" />
 </p>
 
 <br />
