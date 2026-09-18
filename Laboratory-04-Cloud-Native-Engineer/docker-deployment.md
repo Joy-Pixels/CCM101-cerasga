@@ -2,8 +2,6 @@
 
 This document covers the essential commands for managing the lifecycle of a running container from listing and stopping to verifying and removing it.
 
-
-
 <br>
 
 ## Container Lifecycle Commands
@@ -20,11 +18,7 @@ docker ps
 
 **Terminal Output:**
 
-```bash
-root@ubuntu:~$ docker ps
-CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS                                     NAMES
-7ff4436ff783   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-nginx
-```
+<img src="" alt="Output of docker ps showing the running my-nginx container" width="600"/>
 
 💡 **Tip:** Use `docker ps -a` to list **all** containers (running *and* stopped).
 
