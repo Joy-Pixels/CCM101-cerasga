@@ -40,13 +40,15 @@
   <tr>
     <td width="100%" valign="middle">
       <p align="justify">
-        Alongside my UI/UX and web development journey, I'm currently exploring <strong>Cloud Computing</strong> as part of my studies. I'm learning how platforms like AWS, Microsoft Azure, and Google Cloud Platform work, how to compare their services, and how to think through real business scenarios like a Cloud Solutions Consultant would. This is helping me understand not just how to design and build applications, but also how they can be deployed, scaled, and managed in the cloud, giving me a more complete, end-to-end perspective on building digital products.
+        Alongside my UI/UX and web development journey, I'm currently exploring <strong>Cloud Computing</strong> as part of my studies. I'm learning how platforms like AWS, Microsoft Azure, and Google Cloud Platform work, how to compare their services, and how to think through real business scenarios like a Cloud Solutions Consultant would. I'm also learning about <strong>Virtual Machines</strong> and <strong>Docker containers</strong> — understanding how each one works, when to use them, and how they help deploy and manage applications in the cloud. This is helping me understand not just how to design and build applications, but also how they can be deployed, scaled, and managed in the cloud, giving me a more complete, end-to-end perspective on building digital products.
       </p>
       <p align="center">
         <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" />
         <img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" />
         <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white" />
         <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+        <img src="https://img.shields.io/badge/Virtual%20Machines-607078?style=flat-square&logo=vmware&logoColor=white" />
       </p>
     </td>
   </tr>
