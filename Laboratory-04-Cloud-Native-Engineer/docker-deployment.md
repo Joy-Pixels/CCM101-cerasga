@@ -18,7 +18,7 @@ docker ps
 
 **Terminal Output:**
 
-<img src="" alt="Output of docker ps showing the running my-nginx container" width="600"/>
+<img src="https://github.com/Joy-Pixels/Portfolio/blob/03786f20a762f9f71e23038d8bb162fbedba7c75/docker%20ps.png" alt="List Running Containers " width="600"/>
 
 💡 **Tip:** Use `docker ps -a` to list **all** containers (running *and* stopped).
 
@@ -38,10 +38,7 @@ docker stop my-nginx
 
 **Terminal Output:**
 
-```bash
-root@ubuntu:~$ docker stop my-nginx
-my-nginx
-```
+<img src="https://github.com/Joy-Pixels/Portfolio/blob/03786f20a762f9f71e23038d8bb162fbedba7c75/docker%20stop%20my-nginx.png" alt="Stop the running container" width="600"/>
 
 ---
 
@@ -59,11 +56,7 @@ docker ps -a
 
 **Terminal Output:**
 
-```bash
-root@ubuntu:~$ docker ps -a
-CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                      PORTS     NAMES
-7ff4436ff783   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 10 seconds ago             my-nginx
-```
+<img src="https://github.com/Joy-Pixels/Portfolio/blob/03786f20a762f9f71e23038d8bb162fbedba7c75/docker%20ps%20-a.png" alt="Verify it is stopped " width="600"/>
 
 💡 **Tip:** Running `docker ps` (without `-a`) would show **no containers**, since only stopped containers remain.
 
@@ -83,12 +76,7 @@ docker rm my-nginx
 
 **Terminal Output:**
 
-```bash
-root@ubuntu:~$ docker rm my-nginx
-my-nginx
-root@ubuntu:~$ docker ps -a
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-```
+<img src="https://github.com/Joy-Pixels/Portfolio/blob/03786f20a762f9f71e23038d8bb162fbedba7c75/docker%20rm%20my-nginx.png" alt="Remove the container completely" width="600"/>
 
 The final `docker ps -a` returns an **empty list**, confirming the container has been fully removed from the system.
 
