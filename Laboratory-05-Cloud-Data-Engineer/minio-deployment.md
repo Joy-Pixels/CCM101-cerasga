@@ -6,7 +6,7 @@
 
 ## A. Docker Command
 
-The lab's original image (`minio/minio`) was not available, so I used the community fork `pgsty/minio`. I first confirmed that Docker and the network were working by pulling `hello-world` successfully, then tried `minio/minio` and `quay.io/minio/minio`, which both failed. The `pgsty/minio` fork pulled successfully, so I used it with the same ports, credentials, and arguments as the lab.
+This section shows the commands I used to download and start the MinIO server. The lab's original image (`minio/minio`) was not available, so I used the community fork `pgsty/minio`. I first confirmed that Docker and the network were working by pulling `hello-world` successfully, then tried `minio/minio` and `quay.io/minio/minio`, which both failed. The `pgsty/minio` fork pulled successfully, so I used it with the same ports, credentials, and arguments as the lab.
 
 ```bash
 docker pull pgsty/minio
@@ -22,9 +22,15 @@ docker ps
 
 The `minio-server` container showed a status of "Up" with ports 9000-9001 mapped.
 
+<p align="center"><em>Figure 1: Terminal session showing the MinIO deployment and the running container using KillerCoda Playground</em></p>
+
+<p align="center"><img src="screenshots/minio-deployed.png" alt="MinIO deployed" width="700"></p>
+
 ---
 
 ## B. Web Console Port
+
+This section explains how I reached the MinIO management console from my browser. The server exposes two ports, and the console is the one used for administration.
 
 | Item | Detail |
 | :--- | :--- |
@@ -34,9 +40,15 @@ The `minio-server` container showed a status of "Up" with ports 9000-9001 mapped
 
 This opened the web console in a new browser tab, where I logged in with the credentials set in the Docker command. The fork's web console is branded "SILO," but it provides the same bucket creation and object browser features as the original MinIO.
 
+<p align="center"><em>Figure 2: MinIO web console login page opened through the KillerCoda Traffic / Ports tab on port 9001</em></p>
+
+<p align="center"><img src="screenshots/minio-console-access.png" alt="MinIO console access" width="700"></p>
+
 ---
 
 ## C. Bucket Created
+
+This section records the storage bucket I created for the client's photos and the test files I uploaded to prove that the system works.
 
 | Item | Detail |
 | :--- | :--- |
@@ -44,11 +56,15 @@ This opened the web console in a new browser tab, where I logged in with the cre
 | **Access Level** | Private |
 | **Test Files Uploaded** | `App Instructions.txt`, `Reflection.webp` |
 
+<p align="center"><em>Figure 3: MinIO web console showing the client-photos bucket and the uploaded files</em></p>
+
+<p align="center"><img src="screenshots/minio-bucket-upload.png" alt="Bucket and uploaded files" width="700"></p>
+
 ---
 
-## D. Environment Variables Explained
+## D. Environment Variables
 
-The `-e` flag passes an environment variable into the container at startup, so the server can be configured without editing any files inside the container.
+This section explains the `-e` flags in the Docker command and what each one configured. The `-e` flag passes an environment variable into the container at startup, so the server can be configured without editing any files inside the container.
 
 | Variable | Value | Purpose |
 | :--- | :--- | :--- |
@@ -57,10 +73,3 @@ The `-e` flag passes an environment variable into the container at startup, so t
 
 Putting a password directly in the command is fine for a lab, but in production it is risky because it can appear in shell history and in `docker inspect`. Real deployments use secrets management or environment files instead.
 
----
-
-## E. Evidence
-
-![MinIO deployed](screenshots/minio-deployed.png)
-
-![Bucket and uploaded files](screenshots/minio-bucket-upload.png)
