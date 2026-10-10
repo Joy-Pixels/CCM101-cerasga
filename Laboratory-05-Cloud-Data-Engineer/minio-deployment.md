@@ -1,6 +1,6 @@
 # Checkpoint 5 - Technical Documentation
 
-> **Overview:** This document records how I deployed an S3-compatible object storage server using Docker on a KillerCoda Ubuntu Playground, accessed its web console, and created a bucket for the client's photo-sharing app.
+> This document records how I deployed an S3-compatible object storage server using Docker on a KillerCoda Ubuntu Playground, accessed its web console, and created a bucket for the client's photo-sharing app.
 
 ---
 
@@ -20,11 +20,11 @@ Verified with:
 docker ps
 ```
 
-The `minio-server` container showed a status of "Up" with ports 9000-9001 mapped.
+The `minio-server` container showed a status of "Up" with ports 9000-9001 mapped. Actual output is provided below.
 
-<p align="center"><em>Figure 1: Terminal session showing the MinIO deployment and the running container using KillerCoda Playground</em></p>
+<br>
 
-<p align="center"><img src="screenshots/minio-deployed.png" alt="MinIO deployed" width="700"></p>
+<p align="center"><img src="https://github.com/Joy-Pixels/Portfolio/raw/059b07c549fd0bda91d3eb8e6834929dbf9d39c4/MinIO%20Deployed.png" alt="MinIO deployed" width="700"></p>
 
 ---
 
@@ -38,11 +38,11 @@ This section explains how I reached the MinIO management console from my browser
 | **API Port** | `9000` (used by applications to talk to S3) |
 | **Access Method** | KillerCoda **Traffic / Ports** tab → entered `9001` → clicked **Access** |
 
-This opened the web console in a new browser tab, where I logged in with the credentials set in the Docker command. The fork's web console is branded "SILO," but it provides the same bucket creation and object browser features as the original MinIO.
+This opened the web console in a new browser tab, where I logged in with the credentials set in the Docker command. The fork's web console is branded "SILO," but it provides the same bucket creation and object browser features as the original MinIO. Actual output is provided below.
 
-<p align="center"><em>Figure 2: MinIO web console login page opened through the KillerCoda Traffic / Ports tab on port 9001</em></p>
+<br>
 
-<p align="center"><img src="screenshots/minio-console-access.png" alt="MinIO console access" width="700"></p>
+<p align="center"><img src="https://github.com/Joy-Pixels/Portfolio/raw/059b07c549fd0bda91d3eb8e6834929dbf9d39c4/MinIO%20Console%20Access.png" alt="MinIO console access" width="700"></p>
 
 ---
 
@@ -56,9 +56,11 @@ This section records the storage bucket I created for the client's photos and th
 | **Access Level** | Private |
 | **Test Files Uploaded** | `App Instructions.txt`, `Reflection.webp` |
 
-<p align="center"><em>Figure 3: MinIO web console showing the client-photos bucket and the uploaded files</em></p>
+Actual output is provided below.
 
-<p align="center"><img src="screenshots/minio-bucket-upload.png" alt="Bucket and uploaded files" width="700"></p>
+<br>
+
+<p align="center"><img src="https://github.com/Joy-Pixels/Portfolio/raw/059b07c549fd0bda91d3eb8e6834929dbf9d39c4/Bucket%20and%20uploaded%20files.png" alt="Bucket and uploaded files" width="700"></p>
 
 ---
 
@@ -72,4 +74,3 @@ This section explains the `-e` flags in the Docker command and what each one con
 | `MINIO_ROOT_PASSWORD` | `CloudNova2026!` | Sets the administrator's password. Without these two variables, MinIO would fall back to well-known default credentials, which is insecure. |
 
 Putting a password directly in the command is fine for a lab, but in production it is risky because it can appear in shell history and in `docker inspect`. Real deployments use secrets management or environment files instead.
-
