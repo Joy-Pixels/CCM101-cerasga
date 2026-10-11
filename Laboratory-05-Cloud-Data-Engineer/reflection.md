@@ -1,1 +1,11 @@
+# Mission Reflection
 
+When I first started this checkpoint, I thought storing photos was as simple as saving them to a hard drive. But after learning about the different storage types, I realized object storage is on a whole different level. A traditional block storage hard drive splits data into fixed-size blocks that a computer has to reassemble, which works fine for databases but gets really messy when you're dealing with millions of photos. Object storage treats each photo as its own object with a unique ID and metadata, so you can find it instantly without digging through folders. It's also practically unlimited in size, so you never have to worry about running out of space.
+
+Deploying MinIO with Docker felt like using a cheat code. Instead of manually installing packages and configuring the server step by step, I just ran one `docker run` command and the whole thing was live in seconds. I could set the username and password with environment variables, map the ports, and open the web console right in my browser. If I made a mistake, I could just delete the container and start over without messing up the main system.
+
+A "bucket" in cloud storage is basically a top-level container where you store your objects, kind of like a folder but without any real hierarchy. I created a bucket called `client-photos` for the client's app and set it to private so only authorized users could access the files.
+
+One thing that really made me think was how big companies keep their data safe. They probably don't rely on just one server. Instead, they use replication, which means the same data is copied to many servers in different locations. So even if one physical server crashes, the data still exists somewhere else. Services like Amazon S3 promise around 11 nines of durability, which basically means your data is almost impossible to lose.
+
+Looking back my Linux command line learning has really grown. At first, I was nervous about typing commands because I thought one wrong move would break everything. But after using commands like `docker pull`, `docker run`, and `docker ps`, I'm starting to feel more at ease. I still double-check my commands before hitting enter, but I'm definitely less scared of the terminal now than I was before.
