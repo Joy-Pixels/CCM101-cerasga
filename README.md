@@ -86,9 +86,9 @@
     <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-04-Cloud-Native-Engineer">View</a></td>
   </tr>
    <tr>
-    <td nowrap>Laboratory 05 – Upcoming</td>
-    <td align="center">🔜 Not Started</td>
-    <td align="center">—</td>
+    <td nowrap>Laboratory 05 – Cloud Data Engineer</td>
+    <td align="center">✅ Completed</td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-05-Cloud-Data-Engineer">View</a></td>
   </tr>
 </table>
 
