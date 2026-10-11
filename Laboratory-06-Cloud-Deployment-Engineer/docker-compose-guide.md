@@ -8,7 +8,9 @@ This guide explains the `docker-compose.yml` file I wrote to deploy a two-tier N
 
 I created the file with the `nano` editor inside a `nextcloud-deployment` directory.
 
-![Writing the file in nano](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/nano-editor.png)
+![Writing the file in nano](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/nano-editor.png?raw=true)
+
+*Figure 1. Writing `docker-compose.yml` in the nano editor on the KillerCoda Ubuntu playground.*
 
 ```yaml
 version: '3'
@@ -35,7 +37,9 @@ services:
 
 I confirmed the file saved with the correct indentation by printing it with `cat`:
 
-![docker-compose.yml printed in the terminal](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/compose-file.png)
+![docker-compose.yml printed in the terminal](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/compose-file.png?raw=true)
+
+*Figure 2. Output of `cat docker-compose.yml` showing the saved file with consistent two-space indentation.*
 
 ---
 
@@ -58,7 +62,9 @@ Through the `MYSQL_HOST=database` environment variable. The value `database` is 
 
 The `database` service has no `ports:` entry, so it is only reachable inside that network. Only the `app` service is published to the outside on port 8080. The "Autoconfig file detected" banner below shows Nextcloud picked up the `MYSQL_*` variables from my Compose file.
 
-![Nextcloud setup page](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/nextcloud-web.png)
+![Nextcloud setup page](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/nextcloud-web.png?raw=true)
+
+*Figure 3. The Nextcloud setup page reached through port 8080, showing the "Autoconfig file detected" banner.*
 
 ---
 
@@ -79,8 +85,12 @@ The `database` service has no `ports:` entry, so it is only reachable inside tha
 
 `docker-compose ps` showed both containers `Up`. The app was published on `0.0.0.0:8080->80/tcp`, and the database showed only the internal `3306/tcp`.
 
-![Deployment and running containers](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/compose-deployment.png)
+![Deployment and running containers](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/compose-deployment.png?raw=true)
+
+*Figure 4. Output of `docker-compose up -d` followed by `docker-compose ps`, showing both containers in the `Up` state.*
 
 `docker-compose down` then stopped and removed both containers and the network.
 
-![Teardown](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/compose-teardown.png)
+![Teardown](https://github.com/Joy-Pixels/Portfolio/blob/16ae2dbc54dfa7c5064ec8e65b0b19fb53b579ca/compose-teardown.png?raw=true)
+
+*Figure 5. Output of `docker-compose down` showing the containers and the `nextcloud-deployment_default` network being removed.*
