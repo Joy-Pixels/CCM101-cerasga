@@ -93,7 +93,7 @@
    <tr>
     <td nowrap>Laboratory 06 – Cloud Deployment Engineer</td>
     <td align="center">✅ Completed</td>
-    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-05-Cloud-Data-Engineer">View</a></td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-06-Cloud-Deployment-Engineer">View</a></td>
   </tr>
 </table>
 
