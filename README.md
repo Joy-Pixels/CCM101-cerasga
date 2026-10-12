@@ -90,12 +90,17 @@
     <td align="center">✅ Completed</td>
     <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-05-Cloud-Data-Engineer">View</a></td>
   </tr>
+   <tr>
+    <td nowrap>Laboratory 06 – Cloud Deployment Engineer</td>
+    <td align="center">✅ Completed</td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-05-Cloud-Data-Engineer">View</a></td>
+  </tr>
 </table>
 
 <br />
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Progress-4%20of%20Many%20Labs%20Completed-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Progress-6%20of%20Many%20Labs%20Completed-blue?style=flat-square" />
 </p>
 
 <br />
