@@ -1,10 +1,13 @@
-# System Baseline Report
+# Checkpoint 2: System Baseline Report
 
 ## 1. Memory (RAM) Usage
 
 To check the server's current memory usage, I ran the `free -h` command. This shows the total available RAM, how much is currently used, and how much is available for new processes.
 
-![Memory Check Screenshot](screenshots/memory-check.png)
+<p align="center">
+  <img src="https://github.com/Joy-Pixels/CCM101-cerasga/blob/cbc9f3298585db5020788cf88eb32b0f41bf7926/Laboratory-07-Cloud-Operations-Engineer/screenshots/checkpoint%202%20-%20memory-check.png" alt="Memory check screenshot" width="600">
+  <br>
+</p>
 
 **Results:**
 - **Total RAM available on the server:** 1.9 GiB
@@ -17,7 +20,10 @@ To check the server's current memory usage, I ran the `free -h` command. This sh
 
 To check the server's available disk storage, I ran the `df -h /` command. This shows the total size, used space, and available space on the root filesystem.
 
-![Disk Check Screenshot](screenshots/disk-check.png)
+<p align="center">
+  <img src="https://github.com/Joy-Pixels/CCM101-cerasga/blob/cbc9f3298585db5020788cf88eb32b0f41bf7926/Laboratory-07-Cloud-Operations-Engineer/screenshots/checkpoint%202%20-%20disk-check.png" alt="Disk check screenshot" width="600">
+  <br>
+</p>
 
 **Results:**
 - **Total Storage capacity of the root (/) file system:** 19 GiB
@@ -31,7 +37,10 @@ To check the server's available disk storage, I ran the `df -h /` command. This 
 
 To view the active running processes and observe the CPU load, I opened the task manager by running the `top` command. I waited 5 seconds to observe the shifting CPU metrics, then pressed `q` to exit.
 
-![Top Command Screenshot](screenshots/top-check.png)
+<p align="center">
+  <img src="https://github.com/Joy-Pixels/CCM101-cerasga/blob/cbc9f3298585db5020788cf88eb32b0f41bf7926/Laboratory-07-Cloud-Operations-Engineer/screenshots/checkpoint%202%20-%20cpu-load-top.png" alt="Top command screenshot" width="600">
+  <br>
+</p>
 
 **Observations:**
 - **Total Tasks:** 128 total (1 running, 127 sleeping)
@@ -39,8 +48,6 @@ To view the active running processes and observe the CPU load, I opened the task
 - **Load Average:** 0.00, 0.00, 0.00
 
 ---
-
-<br>
 
 ## ✅ Why Checking Disk Space is Critical Before a Traffic Surge
 
@@ -55,5 +62,3 @@ Checking disk space is critical before a massive traffic surge because logs, con
 | RAM | 1.9 GiB | 402 MiB | 1.5 GiB |
 | Disk (/) | 19 GiB | 5.5 GiB | 13 GiB |
 | CPU Load | — | — | 0.00 average |
-
-
