@@ -1,33 +1,27 @@
 # Laboratory 7: The Cloud Operations Engineer
 
-
 ## 🎯 Mission Overview
 
-> Congratulations! Your ability to deploy multi-tier architectures has proven your technical capabilities. You have now been promoted to the Cloud Operations Team (often referred to in the industry as Site Reliability Engineering, or SRE) at CloudNova Technologies.
->
-> Deploying a cloud application is only the first step; keeping it running smoothly is the real challenge. When a server crashes or a web page takes ten seconds to load, you cannot simply guess what is wrong. You must rely on Observability and Monitoring to see inside your infrastructure.
->
-> Using the KillerCoda Playground, you will step into the role of a Cloud Operations Engineer. You will establish a performance baseline for your Linux server, deploy a containerized application, generate artificial web traffic, and hunt down performance metrics and system logs to prove the application is healthy.
->
-> Remember: A developer hopes the application works; a Site Reliability Engineer uses metrics and logs to prove it.
->
-> *Source: CCM101 Laboratory Activity 7, Mission 7: The Cloud Operations Engineer, University of Eastern Pangasinan.*
+Congratulations! Your ability to deploy multi-tier architectures has proven your technical capabilities. You have now been promoted to the Cloud Operations Team (often referred to in the industry as Site Reliability Engineering, or SRE) at CloudNova Technologies.
 
+Deploying a cloud application is only the first step; keeping it running smoothly is the real challenge. When a server crashes or a web page takes ten seconds to load, you cannot simply guess what is wrong. You must rely on Observability and Monitoring to see inside your infrastructure.
+
+Using the KillerCoda Playground, you will step into the role of a Cloud Operations Engineer. You will establish a performance baseline for your Linux server, deploy a containerized application, generate artificial web traffic, and hunt down performance metrics and system logs to prove the application is healthy.
+
+> Remember: A developer hopes the application works; a Site Reliability Engineer uses metrics and logs to prove it.
 
 
 <br>
 
 ## 📋 Objectives
 
-> At the end of this laboratory activity, you should be able to:
->
-> - Utilize native Linux command-line tools to monitor host CPU, Memory, and Disk capacity.
-> - Deploy a web container and track its real-time performance using Docker metrics.
-> - Generate web traffic and extract application access logs for analysis.
-> - Translate raw performance data into a readable technical report using Markdown.
-> - Continue expanding a professional GitHub Cloud Computing Portfolio.
->
+At the end of this laboratory activity, you should be able to:
 
+- Utilize native Linux command-line tools to monitor host CPU, Memory, and Disk capacity.
+- Deploy a web container and track its real-time performance using Docker metrics.
+- Generate web traffic and extract application access logs for analysis.
+- Translate raw performance data into a readable technical report using Markdown.
+- Continue expanding a professional GitHub Cloud Computing Portfolio.
 
 <br>
 
@@ -45,6 +39,8 @@
 | `docker stats` | Viewed the container's live CPU, memory, and network usage |
 
 <br>
+
+Below are the screenshots taken during the lab. They show the baseline checks on the Linux server, the deployment of the Nginx container, the traffic simulations (including the 404 error), and the live metrics.
 
 <table>
   <tr>
@@ -93,14 +89,12 @@
 
 ## 🛠️ Skills Learned
 
-- Checking host memory, disk capacity, and CPU load with native Linux tools (`free`, `df`, `top`).
-- Establishing a baseline for a server's health before a traffic surge.
-- Deploying a containerized web server with a fixed name and port mapping.
-- Generating test traffic and deliberately triggering an HTTP 404 error with `curl`.
-- Reading application logs with `docker logs` and identifying 200 and 404 status codes.
-- Monitoring a container's real-time CPU, memory, and network usage with `docker stats`.
-- Telling the difference between logs (what happened) and metrics (how much resource is used).
-- Turning raw terminal output into clear Markdown reports with screenshot evidence.
+- **Checking Server Health:** Learned how to use basic Linux commands to quickly see how much RAM and disk space is left, and how to check the CPU using `top`.
+- **Running Web Servers:** Figured out how to start a web server inside a Docker container and make it accessible on a specific port.
+- **Testing with Fake Traffic:** Used the `curl` command to act like a real user visiting the site, and learned how to purposely break it by asking for a page that doesn't exist.
+- **Reading Logs:** Discovered how to use `docker logs` to play detective and see exactly what requests the server received, including the successful ones and the errors.
+- **Watching Live Metrics:** Used `docker stats` to see how much CPU and memory the container is actually using in real-time, which is super helpful for making sure it doesn't crash.
+- **Writing Reports:** Practiced turning raw terminal text and screenshots into a clean, organized Markdown report for GitHub.
 
 <br>
 
