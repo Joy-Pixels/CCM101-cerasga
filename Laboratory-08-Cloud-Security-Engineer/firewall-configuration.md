@@ -6,21 +6,60 @@ This document details the UFW (Uncomplicated Firewall) commands executed to secu
 
 ### 1. Command used to allow SSH
 
-| Commands | Purpose | Evidence |
-|----------|---------|----------|
-| `sudo ufw allow ssh` | Permanently allows SSH traffic so administrators can remotely manage the server without being locked out once the firewall is enabled. | <img src="screenshots/firewall-activated.png" alt="SSH allowed and firewall activated" width="350"> |
+<table>
+  <thead>
+    <tr>
+      <th width="20%">Commands</th>
+      <th width="35%">Purpose</th>
+      <th width="45%">Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>sudo ufw allow ssh</code></td>
+      <td>Permanently allows SSH traffic so administrators can remotely manage the server without being locked out once the firewall is enabled.</td>
+      <td><img src="https://github.com/Joy-Pixels/Portfolio/blob/3ac61223cee0c1889fcd804d462ddecd8a19be5f/Lab%208/allow%20ssh.png?raw=true" alt="SSH allowed and firewall activated" width="100%"></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2. Commands used to set the Default Deny policy
 
-| Commands | Purpose | Evidence |
-|----------|---------|----------|
-| `sudo ufw default deny incoming`<br>`sudo ufw default allow outgoing` | Blocks all incoming traffic by default while allowing the server to initiate outbound connections (e.g., for updates and package downloads), significantly reducing the attack surface. | <img src="screenshots/firewall-activated.png" alt="Firewall activated with Default Deny policy" width="350"> |
+<table>
+  <thead>
+    <tr>
+      <th width="20%">Commands</th>
+      <th width="35%">Purpose</th>
+      <th width="45%">Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>sudo ufw default deny incoming</code><br><code>sudo ufw default allow outgoing</code></td>
+      <td>Blocks all incoming traffic by default while allowing the server to initiate outbound connections (e.g., for updates and package downloads), significantly reducing the attack surface.</td>
+      <td><img src="https://github.com/Joy-Pixels/Portfolio/blob/3ac61223cee0c1889fcd804d462ddecd8a19be5f/Lab%208/Default%20Deny%20policy.png?raw=true" alt="Firewall activated with Default Deny policy" width="100%"></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 3. Command used to allow Port 8080
 
-| Commands | Purpose | Evidence |
-|----------|---------|----------|
-| `sudo ufw allow 8080/tcp` | Creates a granular rule that permits legitimate web traffic to the Nginx application running on port 8080, while all other ports remain blocked by the Default Deny policy. | <img src="screenshots/firewall-port-allowed.png" alt="Port 8080 allowed and application reachable" width="350"> |
+<table>
+  <thead>
+    <tr>
+      <th width="20%">Commands</th>
+      <th width="35%">Purpose</th>
+      <th width="45%">Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>sudo ufw allow 8080/tcp</code></td>
+      <td>Creates a granular rule that permits legitimate web traffic to the Nginx application running on port 8080, while all other ports remain blocked by the Default Deny policy.</td>
+      <td><img src="https://github.com/Joy-Pixels/Portfolio/blob/3ac61223cee0c1889fcd804d462ddecd8a19be5f/Lab%208/sudo%20ufw%20allow.png?raw=true" alt="Port 8080 allowed and application reachable" width="100%"></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -32,20 +71,76 @@ Running `sudo ufw enable` before allowing SSH would activate the Default Deny po
 
 ## Additional Verification Commands
 
-| Commands | Purpose | Evidence |
-|----------|---------|----------|
-| `sudo ufw status verbose` | Confirms the firewall is active and shows the default policies. | See `firewall-activated.png` |
-| `sudo ufw status numbered` | Lists the firewall rules with index numbers. | See `firewall-port-allowed.png` |
-| `curl http://localhost:8080` | Confirms the web application remains reachable after the firewall is enabled. | See `firewall-port-allowed.png` |
+<table>
+  <thead>
+    <tr>
+      <th width="20%">Commands</th>
+      <th width="30%">Purpose</th>
+      <th width="50%">Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>sudo ufw status verbose</code></td>
+      <td>Confirms the firewall is active and shows the default policies.</td>
+      <td><img src="https://github.com/Joy-Pixels/Portfolio/blob/3ac61223cee0c1889fcd804d462ddecd8a19be5f/Lab%208/firewall-activated.png?raw=true" alt="Output of ufw status verbose" width="100%"></td>
+    </tr>
+    <tr>
+      <td><code>sudo ufw status numbered</code></td>
+      <td>Lists the firewall rules with index numbers.</td>
+      <td><img src="https://github.com/Joy-Pixels/Portfolio/blob/3ac61223cee0c1889fcd804d462ddecd8a19be5f/Lab%208/firewall-port-allowed.png?raw=true" alt="Output of ufw status numbered" width="100%"></td>
+    </tr>
+    <tr>
+      <td><code>curl http://localhost:8080</code></td>
+      <td>Confirms the web application remains reachable after the firewall is enabled.</td>
+      <td><img src="https://github.com/Joy-Pixels/Portfolio/blob/3ac61223cee0c1889fcd804d462ddecd8a19be5f/Lab%208/curl.png" alt="Successful curl response after allowing port 8080" width="100%"></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Final Firewall State
 
-| Rule | Port | Protocol | Action | Purpose |
-|------|------|----------|--------|---------|
-| 1 | 22 | TCP | ALLOW IN | Remote administration (SSH) |
-| 2 | 8080 | TCP | ALLOW IN | Web application (Nginx) |
-| 3 | 22 | TCP (v6) | ALLOW IN | Remote administration (SSH) — IPv6 |
-| 4 | 8080 | TCP (v6) | ALLOW IN | Web application (Nginx) — IPv6 |
+<table>
+  <thead>
+    <tr>
+      <th width="8%">Rule</th>
+      <th width="10%">Port</th>
+      <th width="14%">Protocol</th>
+      <th width="14%">Action</th>
+      <th width="54%">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>22</td>
+      <td>TCP</td>
+      <td>ALLOW IN</td>
+      <td>Remote administration (SSH)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8080</td>
+      <td>TCP</td>
+      <td>ALLOW IN</td>
+      <td>Web application (Nginx)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>22</td>
+      <td>TCP (v6)</td>
+      <td>ALLOW IN</td>
+      <td>Remote administration (SSH) — IPv6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>8080</td>
+      <td>TCP (v6)</td>
+      <td>ALLOW IN</td>
+      <td>Web application (Nginx) — IPv6</td>
+    </tr>
+  </tbody>
+</table>
 
 Default policies:
 
