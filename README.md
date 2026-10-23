@@ -98,12 +98,12 @@
    <tr>
     <td nowrap>Laboratory 07 – Cloud Operations Engineer</td>
     <td align="center">✅ Completed</td>
-    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-06-Cloud-Deployment-Engineer">View</a></td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-07-Cloud-Operations-Engineer">View</a></td>
   </tr>
      <tr>
     <td nowrap>Laboratory 08 – Cloud Security Engineer</td>
     <td align="center">✅ Completed</td>
-    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-06-Cloud-Security-Engineer">View</a></td>
+    <td align="center"><a href="https://github.com/Joy-Pixels/CCM101-cerasga/tree/main/Laboratory-08-Cloud-Security-Engineer">View</a></td>
   </tr>
 </table>
 
