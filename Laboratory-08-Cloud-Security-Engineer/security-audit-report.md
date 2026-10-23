@@ -1,4 +1,4 @@
-# Checkpoint 2: Security Audit Report 
+# Checkpoint 2 - Security Audit Report 
 
 This report documents the core cloud security concepts applied during Mission 8. These principles guided the decision to deploy a web application, audit its exposed services, and configure a host-based firewall with a strict Default Deny policy.
 
