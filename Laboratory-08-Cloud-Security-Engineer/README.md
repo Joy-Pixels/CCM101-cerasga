@@ -48,3 +48,13 @@ At the end of this laboratory activity, you should be able to:
 4. I learned about granular port management by allowing only SSH (port 22) and the web application (port 8080) while keeping everything else closed.
 
 5. I learned about defense in depth and the safe order of operations, such as allowing SSH before enabling the firewall to avoid locking myself out.
+
+## 📁 Repository Content
+
+| File | Description |
+|------|-------------|
+| [README.md](README.md) | Overview of the mission, commands, and skills learned |
+| [security-audit-report.md](security-audit-report.md) | Definitions of PoLP, Attack Surface, and Default Deny Policy |
+| [firewall-configuration.md](firewall-configuration.md) | UFW commands used to secure the server, with evidence |
+| [reflection.md](reflection.md) | Personal reflection on the mission |
+| [screenshots/](screenshots/) | Evidence of the running application, firewall activation, and allowed port 8080 |
