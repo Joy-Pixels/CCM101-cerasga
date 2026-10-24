@@ -1,6 +1,6 @@
 # Mission Reflection — Cloud Automation Engineer
 
-## My Reflection
+## 📖 My Reflection
 
 Moving from a traditional systems administrator to a Cloud Automation Engineer has been a great learning experience. Completing this final mission helped me understand how large companies manage their computer systems.
 
