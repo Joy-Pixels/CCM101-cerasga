@@ -1,6 +1,4 @@
-# Mission Reflection — Cloud Security Engineer
-
-## 📖 My Reflection
+# 📖 Mission Reflection
 
 Completing this mission helped me see that cloud security is not just a one-time task but something that needs constant attention. It also showed me how easily an unprotected server can be taken advantage of.
 
