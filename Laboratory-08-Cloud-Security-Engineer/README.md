@@ -1,4 +1,4 @@
-# Laboratory 08 — Cloud Security Engineer
+# Laboratory 08: Cloud Security Engineer
 
 ## 🛰️ Mission Overview
 
@@ -8,7 +8,7 @@ In the cloud, leaving a server unsecured for even a few minutes can lead to auto
 
 Using the KillerCoda Playground, you will step into the role of a Cloud Security Engineer. You will deploy a web application, audit the server's open ports, and configure the Uncomplicated Firewall (UFW) to block malicious traffic while allowing legitimate users to access the application.
 
-> Remember: Security is not a product you buy; it is a continuous process you maintain.*
+> Remember: **Security is not a product you buy; it is a continuous process you maintain.**
 
 ## 🎯 Objectives
 
