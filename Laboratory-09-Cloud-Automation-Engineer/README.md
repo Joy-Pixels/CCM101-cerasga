@@ -1,4 +1,4 @@
-# Laboratory Activity 9 - The Cloud Automation Engineer
+# Laboratory Activity 9: The Cloud Automation Engineer
 
 ## 🎯 Mission Overview
 
@@ -49,7 +49,7 @@ At the end of this laboratory activity, you should be able to:
 
 5. I learned how to use the `tar` command to compress directories into timestamped `.tar.gz` archives, ensuring every backup file has a unique name and old data remains safe.
 
-## 📸 Screenshots
+## Outputs
 
 <p align="center">
   <img src="screenshots/checkpoint%204%20-%20script-execution.png" alt="Script execution" width="450">
